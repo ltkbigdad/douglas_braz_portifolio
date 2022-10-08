@@ -11,8 +11,11 @@ export const AboutMe = () => {
                     <p>Desenvolvedor Front-End</p>
 
                     <div className="buttonsBox">
-                    <Button default>Download CV</Button>
-                    <Button>Contato</Button>
+                        <Button default>Download CV</Button>
+                        <a href="https://wa.me/5524974035564">
+                            <Button>Contato</Button>
+                        </a> 
+                    
                     </div>
                 </div>
 
