@@ -1,3 +1,9 @@
+import { Container } from "./style"
+
 export const Home = () =>{
-    return<h1>home</h1>
+    return(
+        <Container>
+            <h1>home</h1>
+        </Container>
+    )   
 }
