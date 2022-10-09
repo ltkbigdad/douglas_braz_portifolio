@@ -1,3 +1,5 @@
+import { AboutMe } from "../../components/AboutMe"
+
 export const ScreenTest =() =>{
-    return<h1>Tela de Testes</h1>
+    return<AboutMe/>
 }

@@ -56,4 +56,27 @@ export const Content = styled.div`
 
 `;
 
-export const ArticleContent = styled.div``;
+export const ArticleContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        
+        color: var(--white);
+    }
+
+    p{
+        
+        width: 70%;
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 70%;
+        margin-top: 1em;
+        color: var(--grey-500);
+    }
+    
+`;

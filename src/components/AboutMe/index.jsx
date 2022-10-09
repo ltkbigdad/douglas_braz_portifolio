@@ -12,9 +12,7 @@ export const AboutMe = () => {
 
                     <div className="buttonsBox">
                         <Button default>Download CV</Button>
-                        <a href="https://wa.me/5524974035564">
-                            <Button>Contato</Button>
-                        </a> 
+                        <Button>Contato</Button>                       
                     
                     </div>
                 </div>
@@ -25,6 +23,8 @@ export const AboutMe = () => {
             </Content>
 
             <ArticleContent>
+                <h2>Sobre mim</h2>
+                <p>Sou Douglas Braz, minha conexão e paixão com a tecnologia começou na adolescência, sempre tentava resolver problemas do cotidiano com tecnologia, através de tutoriais e demais ferramentas disponíveis na internet.  Quando descobri que sou capaz de criar soluções para a minha vida e de outras pessoas,  ficou claro que eu queria ser  desenvolvedor. Cursei desenvolvimento web Front -End na Kenzie Academy Brasil.  Sou muito curioso e sempre estou buscando conhecimento e  gosto de me deparar com problemas a serem resolvidos, por quê existe a necessidade de buscar mais conhecimento para resolvê-los e assim vou adquiro mais  experiência.</p>
 
             </ArticleContent>
         </Container>
