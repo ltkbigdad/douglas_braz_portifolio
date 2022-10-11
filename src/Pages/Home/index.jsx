@@ -1,9 +1,10 @@
 import { Container } from "./style"
+import obra from "../../assets/images/obra.png"
 
 export const Home = () =>{
     return(
-        <Container>
-            <h1>home</h1>
+        <Container>            
+            <img src={obra} alt="obra"/>
         </Container>
     )   
 }
