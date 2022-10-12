@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 height: 100vh;
+margin-top: 10px;
 
 `;
 
@@ -54,6 +55,49 @@ export const Content = styled.div`
         display: none;        
     }
 
+    @media (min-width: 1023px){
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+
+       margin-top: 10px;
+
+       .description{
+            width: 40%;
+           
+            h1{
+              font-size: 3em; 
+            }
+
+            p{
+              font-size: 2em;
+              margin-top: 0px;
+            }
+
+            .buttonsBox{
+                display: flex;
+                flex-direction: row;                
+                font-size: 1.3em;
+            }
+
+        }
+
+       .imageBox{            
+            display: flex;            
+            width: 20%; 
+            margin-top: 2% ;
+                     
+         
+            img{
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+
+
+    }
+
 `;
 
 export const ArticleContent = styled.div`
@@ -77,6 +121,19 @@ export const ArticleContent = styled.div`
         width: 70%;
         margin-top: 1em;
         color: var(--grey-500);
+    }
+
+    @media (min-width: 1023px){
+        margin-top: 150px;
+
+        h2{
+            font-size: 2em;
+        }
+
+        p{
+            width: 60%;
+            font-size: 1.5em;           
+        }
     }
     
 `;
