@@ -1,5 +1,11 @@
 import { AboutMe } from "../../components/AboutMe"
+import { Header } from "../../components/Header"
 
 export const ScreenTest =() =>{
-    return<AboutMe/>
+    return(
+        <>
+        <Header/>
+        <AboutMe/>        
+        </>
+    )
 }
