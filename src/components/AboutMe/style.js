@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 height: 100vh;
-margin-top: 10px;
+margin-top: 5px;
 
 `;
 
@@ -64,7 +64,7 @@ export const Content = styled.div`
        margin-top: 10px;
 
        .description{
-            width: 40%;
+            width: 57%;
            
             h1{
               font-size: 3em; 
@@ -124,15 +124,15 @@ export const ArticleContent = styled.div`
     }
 
     @media (min-width: 1023px){
-        margin-top: 150px;
+        margin-top: 40px;
 
         h2{
             font-size: 2em;
         }
 
         p{
-            width: 60%;
-            font-size: 1.5em;           
+            width: 63%;
+            font-size: 1em;           
         }
     }
     

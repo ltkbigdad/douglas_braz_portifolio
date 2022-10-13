@@ -6,6 +6,7 @@ export const Container = styled.div`
     align-items: center;    
     height: 3.5em;
     justify-content: space-around;
+    
 
     .logo{
         font-size: 2em;
@@ -57,4 +58,10 @@ export const Container = styled.div`
 
 
 
+`;
+
+export const MenuContainer = styled.div`
+    height: 100vh;
+    background: none;
+    border: 2px solid red;
 `;
