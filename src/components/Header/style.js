@@ -93,3 +93,9 @@ export const Container = styled.div`
 
 
 `;
+
+export const MenuContainer = styled.div`
+    height: 100vh;
+    background: none;
+    border: 2px solid red;
+`;

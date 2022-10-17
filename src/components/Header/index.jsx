@@ -20,8 +20,7 @@ export const Header = () => {
             <TiThMenu className="menuHamburguer" onClick={() => handleMenu()}/>
 
             { mobile ? (
-                    <>
-                        {/* <p className="close" onClick={() => handleMenu()}>X</p> */}
+                    <>                        
                         <ul className="menuMobile">
                             <li className="menuListMobile">
                                 <a>Sobre</a>
