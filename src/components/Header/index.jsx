@@ -26,7 +26,7 @@ export const Header = () => {
                                 <a>Sobre</a>
                             </li>
                             <li className="menuListMobile">
-                                <a>Especialidades</a>
+                                <a>Habilidades</a>
                             </li>
                             <li className="menuListMobile">
                                 <a>Projetos</a>
@@ -47,7 +47,7 @@ export const Header = () => {
                         <a>Sobre</a>
                     </li>
                     <li className="menuList">
-                        <a>Especialidades</a>
+                        <a>Habilidades</a>
                     </li>
                     <li className="menuList">
                         <a>Projetos</a>

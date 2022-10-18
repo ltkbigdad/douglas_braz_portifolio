@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 height: 100vh;
 margin-top: 5px;
+border-bottom: 1px solid var(--purple-300);
 
 `;
 
@@ -113,12 +114,11 @@ export const ArticleContent = styled.div`
 
     p{
         
-        width: 70%;
+        width: 80%;
         display: flex;        
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 70%;
         margin-top: 1em;
         color: var(--grey-500);
     }
