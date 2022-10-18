@@ -19,7 +19,7 @@ export const CardContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin-left: 2px;
-    margin-top: 152px;
+    
     overflow-y: scroll;
     width: 94%;
 
@@ -55,8 +55,8 @@ export const Content = styled.div`
 `;
 
 export const Card = styled.div`
-    width: 174px;
-    height: 272px;
+    width: 273px;
+    height: 415px;
     margin: 10px;
     
     display: flex;
@@ -78,8 +78,9 @@ export const Card = styled.div`
     }
 
     .name{
-        font-size: 16px;
+        font-size: 39px;
         margin-top: 50px;
+        margin-left: 5px;
         font-weight: 600;
 
     }
