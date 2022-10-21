@@ -51,7 +51,7 @@ export const Hability = () => {
     ]
 
     return(
-        <Container>
+        <Container className="hability">
             <h3>Habilidades</h3>
 
             <CardContainer>
