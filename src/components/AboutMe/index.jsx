@@ -4,7 +4,7 @@ import perfil from "../../assets/images/perfil.png"
 
 export const AboutMe = () => {
     return(
-        <Container>
+        <Container className="aboutMe">
             <Content>
                 <div className="description">
                     <h1>Olá, eu sou <span>Douglas Braz</span></h1>

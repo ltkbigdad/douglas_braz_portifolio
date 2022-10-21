@@ -34,12 +34,6 @@ export const Contact = () => {
             link: "https://github.com/ltkbigdad"
         },
         {
-            icon: < IoLogoVercel className="icon"/>,
-            tittle: "Vercel",
-            item: "Douglas Braz",
-            link: "https://vercel.com/douglasbraz"
-        },
-        {
             icon: <AiFillInstagram  className="icon"/>,
             tittle: "instagram",
             item: "doug.developer",

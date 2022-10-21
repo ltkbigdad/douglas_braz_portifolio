@@ -69,9 +69,11 @@ export const ContactContent = styled.div`
 export const CardContact = styled.div`
     display: flex;
     margin: 20px;
+    
    
     .icon{
         color: var(--grey-500);
+        margin-top: 3px;
         width: 2em;
         height: 2em;
         :hover{
