@@ -58,17 +58,11 @@ export const Hability = () => {
                 <Content>
                     {hab_arr.map((el, index) => {
                             const { image, name } = el;
-                            return (
-                                
+                            return (                                
                                     <Card>
                                     <img className="hab_image" src={image} alt="imge"/>
                                     <p className="name">{name}</p>
-
                                     </Card>
-                                
-
-                                
-                            
                             )
                         } 
                     )
