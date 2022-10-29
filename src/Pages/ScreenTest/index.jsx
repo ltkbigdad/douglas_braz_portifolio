@@ -3,10 +3,13 @@ import { Contact } from "../../components/Contact"
 import { Hability } from "../../components/Hability"
 import { Header } from "../../components/Header"
 
+
 export const ScreenTest =() =>{
     return(
-        <>
-        <Header/>
+        <>  
+         
+            
+        <Header/> 
         <AboutMe/>        
         <Hability/>
         <Contact/>

@@ -1,4 +1,4 @@
-import { ContactContent, Container, Content, ImageContent, CardContact } from "./style"
+import { Background, ContactContent, Container, Content, ImageContent, CardContact } from "./style"
 import contato from "../../assets/images/contato.svg"
 import {AiOutlineUser} from "react-icons/ai"
 import {AiOutlineMail} from "react-icons/ai"
@@ -42,37 +42,54 @@ export const Contact = () => {
         
     ]
     return(
-        <Container>
-            <div className="divTitle">
-            <hr ></hr><h4>Contato</h4><hr align="left" width="30%" size="5"/>
-            </div>
+        <>
+            <Background>
+                <ul>
+                        <li className='boxAnimated'></li>
+                        <li className='boxAnimated'></li>
+                        <li className='boxAnimated'></li>
+                        <li className='boxAnimated'></li>
+                        <li className='boxAnimated'></li>
+                        <li className='boxAnimated'></li>
+                        <li className='boxAnimated'></li>
+                        <li className='boxAnimated'></li>
+                        <li className='boxAnimated'></li>
+                        <li className='boxAnimated'></li>
+                </ul>
+            <Container>
+                <div className="divTitle">
+                <hr ></hr><h4>Contato</h4><hr align="left" width="30%" size="5"/>
+                </div>
 
-            <Content>
-                <ContactContent>
-                    <h5>Visite minhas redes sociais</h5>
-                    {cardItens_arr.map((el, index) => {
-                        const { icon, tittle, item, link } = el;
-                        return (
-                            <CardContact key={index}>
-                                <a target="_blank" rel="noreferrer" href={link}>
-                                    {icon}
-                                </a>
-                                
-                                <div>
-                                <p className="tittle">{tittle}</p>
-                                <p className="item">{item}</p>                            
-                                </div>
-                            </CardContact>
+                <Content>
+                    <ContactContent>
+                        <h5>Visite minhas redes sociais</h5>
+                        {cardItens_arr.map((el, index) => {
+                            const { icon, tittle, item, link } = el;
+                            return (
+                                <CardContact key={index}>
+                                    <a target="_blank" rel="noreferrer" href={link}>
+                                        {icon}
+                                    </a>
+                                    
+                                    <div>
+                                    <p className="tittle">{tittle}</p>
+                                    <p className="item">{item}</p>                            
+                                    </div>
+                                </CardContact>
 
-                        )
-                    })}
-                    
-                </ContactContent>
-                <ImageContent>
-                    <img src={contato} alt="contato"/>
-                </ImageContent>
-            </Content>
-           
-        </Container>
+                            )
+                        })}
+                        
+                    </ContactContent>
+                    <ImageContent>
+                        <img src={contato} alt="contato"/>
+                    </ImageContent>
+                </Content>
+            
+            </Container>
+            
+        </Background>
+        </>
     )
 }

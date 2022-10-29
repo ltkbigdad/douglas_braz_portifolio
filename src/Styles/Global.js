@@ -10,7 +10,7 @@ const Global = createGlobalStyle`
     }
 
     body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'trenda', sans-serif;
         background-color: var(--purple-800);      
     }
 

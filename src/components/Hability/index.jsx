@@ -3,7 +3,7 @@ import css from "../../assets/images/css.png"
 import javascript from "../../assets/images/javascript.png"
 import react from "../../assets/images/react.png"
 import styled from "../../assets/images/styled.png"
-import { Container, CardContainer, Content, Card } from "./style"
+import { Background, Container, CardContainer, Content, Card } from "./style"
 
 export const Hability = () => {
     const hab_arr = [
@@ -51,34 +51,50 @@ export const Hability = () => {
     ]
 
     return(
-        <Container className="hability">
-            <h3>Habilidades</h3>
+        <>
+            <Background>
+            <ul>
+                    <li className='boxAnimated'></li>
+                    <li className='boxAnimated'></li>
+                    <li className='boxAnimated'></li>
+                    <li className='boxAnimated'></li>
+                    <li className='boxAnimated'></li>
+                    <li className='boxAnimated'></li>
+                    <li className='boxAnimated'></li>
+                    <li className='boxAnimated'></li>
+                    <li className='boxAnimated'></li>
+                    <li className='boxAnimated'></li>
+            </ul>
+            <Container className="hability">
+                <h3>Habilidades</h3>
 
-            <CardContainer>
-                <Content>
-                    {hab_arr.map((el, index) => {
-                            const { image, name } = el;
-                            return (
+                <CardContainer>
+                    <Content>
+                        {hab_arr.map((el, index) => {
+                                const { image, name } = el;
+                                return (
+                                    
+                                        <Card>
+                                        <img className="hab_image" src={image} alt="imge"/>
+                                        <p className="name">{name}</p>
+
+                                        </Card>
+                                    
+
+                                    
                                 
-                                    <Card>
-                                    <img className="hab_image" src={image} alt="imge"/>
-                                    <p className="name">{name}</p>
+                                )
+                            } 
+                        )
+                        }
+                    </Content>  
+                </CardContainer>
 
-                                    </Card>
-                                
-
-                                
-                            
-                            )
-                        } 
-                    )
-                    }
-                </Content>  
-            </CardContainer>
-
-              
-            
-        </Container>
+                
+                
+            </Container>
+        </Background>
+        </>
 
     )
 }
