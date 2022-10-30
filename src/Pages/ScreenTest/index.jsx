@@ -5,8 +5,8 @@ import { Header } from "../../components/Header"
 export const ScreenTest =() =>{
     return(
         <>
-        <Header/>
-        <AboutMe/>        
+        {/* <Header/>
+        <AboutMe/>         */}
         <Hability/>
         </>
     )
