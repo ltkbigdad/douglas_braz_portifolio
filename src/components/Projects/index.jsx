@@ -1,4 +1,4 @@
-import { Container, CardProject, CardDescription, Background } from "./style"
+import { Container, ProjectBox, Content, CardProject, CardDescription, Background } from "./style"
 import  test  from "../../assets/images/test.png"
 import { Button } from "../Button"
 import { useState } from "react"
@@ -101,23 +101,24 @@ export const Projects = () => {
                       
             <p>Projetos</p>
 
-                <div className="projectbox">  
-                {
-                    projects_arr.map((el) => {
-                        const {id, image, name} = el;
-                        return( 
-                            <>
-                            <CardProject key={id}>                
-                                <img src={image} alt="teste"/>
-                                <div className="cardHover">
-                                    <p>{name}</p>                        
-                                    <Button default onClick={() => {setModal(true); setAd(id) } } >Saiba mais</Button>
-                                </div>
-                            </CardProject>
-                            </>
-                        )
-                    })
-                }
+                <ProjectBox>  
+                    <Content>
+                        {projects_arr.map((el) => {
+                                const {id, image, name} = el;
+                                return( 
+                                    <>
+                                    <CardProject key={id}>                
+                                        <img src={image} alt="teste"/>
+                                        <div className="cardHover">
+                                            <p>{name}</p>                        
+                                            <Button default onClick={() => {setModal(true); setAd(id) } } >Saiba mais</Button>
+                                        </div>
+                                    </CardProject>
+                                    </>
+                                )
+                            })
+                        }
+                    </Content>
 
                 {
                     modal ? ( projects_filtered.map((el) => {
@@ -155,7 +156,7 @@ export const Projects = () => {
                   
 
                 
-            </div>
+            </ProjectBox>
 
 
 
