@@ -15,7 +15,7 @@ export const Header = () => {
 
     return (
         <Container>
-            <p className="logo">Portifólio</p>
+            <p className="logo">Portfólio</p>
 
             <TiThMenu className="menuHamburguer" onClick={() => handleMenu()}/>
 

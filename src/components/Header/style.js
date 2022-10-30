@@ -40,8 +40,9 @@ export const Container = styled.div`
         position: absolute;
         background: #13131f;        
         top: 9vh;
-        width: 50vw;
-        height: 92vh;
+        margin-right: 93%;
+        width: 100vw;
+        height: 22vh;
         align-items: center;
         justify-content: space-evenly;
         transform: translateX(49%);
@@ -51,6 +52,7 @@ export const Container = styled.div`
     .menuListMobile{
             margin: 1px;
             font-size: 1.2em;
+            
             color:var(--purple-300);
             :hover{
                 cursor: pointer;

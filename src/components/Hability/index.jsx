@@ -51,24 +51,18 @@ export const Hability = () => {
     ]
 
     return(
-        <Container>
+        <Container className="hability">
             <h3>Habilidades</h3>
 
             <CardContainer>
                 <Content>
                     {hab_arr.map((el, index) => {
                             const { image, name } = el;
-                            return (
-                                
+                            return (                                
                                     <Card>
                                     <img className="hab_image" src={image} alt="imge"/>
                                     <p className="name">{name}</p>
-
                                     </Card>
-                                
-
-                                
-                            
                             )
                         } 
                     )
