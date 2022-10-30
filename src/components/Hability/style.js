@@ -114,7 +114,7 @@ export const Background = styled.div`
 `;
 
 export const Container = styled.div`
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -181,7 +181,7 @@ export const Card = styled.div`
     box-shadow: 0 70px 63px -60px #000000;
     :hover{
         cursor: pointer;       
-        transform: scale(0.95);
+        transform: scale(1.2);
     }
     
 

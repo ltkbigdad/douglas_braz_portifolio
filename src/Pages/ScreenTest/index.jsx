@@ -8,10 +8,9 @@ export const ScreenTest =() =>{
     return(
         <>
         {/* <Header/>
-        <AboutMe/>        
-        <Hability/> */}
-        <Projects/>
-        {/* <Contact/> */}
+        <AboutMe/>         */}
+        <Hability/>
+
         </>
     )
 }
