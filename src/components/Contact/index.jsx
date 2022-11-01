@@ -43,19 +43,7 @@ export const Contact = () => {
     ]
     return(
         <>
-            <Background>
-                <ul>
-                        <li className='boxAnimated'></li>
-                        <li className='boxAnimated'></li>
-                        <li className='boxAnimated'></li>
-                        <li className='boxAnimated'></li>
-                        <li className='boxAnimated'></li>
-                        <li className='boxAnimated'></li>
-                        <li className='boxAnimated'></li>
-                        <li className='boxAnimated'></li>
-                        <li className='boxAnimated'></li>
-                        <li className='boxAnimated'></li>
-                </ul>
+          
             <Container>
                 <div className="divTitle">
                 <hr ></hr><h4>Contato</h4><hr align="left" width="30%" size="5"/>
@@ -89,7 +77,7 @@ export const Contact = () => {
             
             </Container>
             
-        </Background>
+        
         </>
     )
 }
