@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-height: 100%;
+height: 100vh;
 margin-top: 5px;
 border-bottom: 1px solid var(--purple-300);
 
@@ -158,6 +158,7 @@ export const ArticleContent = styled.div`
 
     @media (min-width: 1023px){
         margin-top: 80px;
+        margin-bottom: 30px;
 
         h2{
             font-size: 2em;
