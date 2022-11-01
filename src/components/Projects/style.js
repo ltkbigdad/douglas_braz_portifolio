@@ -1,20 +1,27 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-
-    /* .projectBox{
-        display: flex;
-        gap: 3.75rem;
-        flex-wrap: wrap;
-        align-items: center;
-    } */
-
-
 `;
+
+export const ProjectBox = styled.div`
+    display: flex;
+        flex-wrap: wrap;
+        margin-left: 2px;
+        
+        overflow-y: scroll;
+        width: 94%;
+`;
+
+export const Content = styled.div`
+    display: flex;    
+    flex-direction: row; 
+`;
+
 
 export const CardProject = styled.div`
     width: 16em;
@@ -66,9 +73,10 @@ export const CardDescription = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75%;
+    width: 95%;
+    height: 70%;
     padding: 1.5rem;    
-    background-color: red;
+    background-color: var(--purple-800); 
     border-radius: 1rem;    
     position: fixed;
     top: 50%;
@@ -77,10 +85,10 @@ export const CardDescription = styled.div`
     transform: translate(-50%, -50%);
 
     .boxImgButtons{
-        height: 50%;
-
+        width: 100%;
+       
         .boxImage{
-            height: 50%;
+            width: 100%;
             img{
                 width: 100%;
             }
@@ -94,10 +102,11 @@ export const CardDescription = styled.div`
 `;
 
 export const Background = styled.div`
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 5;
+   
+   
+    border: 1px solid red;
+    /* position: fixed; */
+    /* z-index: 5; */
     background: red;
     
 `;

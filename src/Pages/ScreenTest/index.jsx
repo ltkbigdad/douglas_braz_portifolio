@@ -7,11 +7,13 @@ import { Projects } from "../../components/Projects"
 export const ScreenTest =() =>{
     return(
         <>
+
         <Header/>
         <AboutMe/>        
         <Hability/>
         <Projects/>
         <Contact/>
+
         </>
     )
 }
