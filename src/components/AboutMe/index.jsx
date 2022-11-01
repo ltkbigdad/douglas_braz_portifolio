@@ -1,23 +1,12 @@
-import { ArticleContent, Background, Container, Content } from "./style"
+import { ArticleContent, Container, Content } from "./style"
 import { Button } from "../Button"
 import perfil from "../../assets/images/perfil.png"
 
 export const AboutMe = () => {
     return(
         <>
-            <Background>
-            <ul>
-                    <li className='boxAnimated'></li>
-                    <li className='boxAnimated'></li>
-                    <li className='boxAnimated'></li>
-                    <li className='boxAnimated'></li>
-                    <li className='boxAnimated'></li>
-                    <li className='boxAnimated'></li>
-                    <li className='boxAnimated'></li>
-                    <li className='boxAnimated'></li>
-                    <li className='boxAnimated'></li>
-                    <li className='boxAnimated'></li>
-            </ul>
+            
+            
         
             <Container className="aboutMe">
                 <Content>
@@ -43,7 +32,7 @@ export const AboutMe = () => {
 
                 </ArticleContent>
             </Container>
-        </Background>
+        
         </>
 
 
