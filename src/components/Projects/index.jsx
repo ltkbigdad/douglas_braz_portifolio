@@ -14,7 +14,7 @@ export const Projects = () => {
             name: "Do It",
             description: "descriçao teste",
             technologies: "tecnologia teste",
-            repository: "https://www.google.com/" ,
+            repository: "https://github.com/ltkbigdad/app-to-do-list.git" ,
             link: "https://app-to-do-list-blush.vercel.app/",
         },
         {
