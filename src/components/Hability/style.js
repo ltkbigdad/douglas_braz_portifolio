@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    /* height: 100vh; */
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -29,7 +29,8 @@ export const CardContainer = styled.div`
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        height: 622px;
+        /* height: 622px; */
+        overflow-y: auto;
     }
     
     
@@ -56,20 +57,22 @@ export const Content = styled.div`
 `;
 
 export const Card = styled.div`
-    width: 273px;
-    height: 415px;
+    width: 176px;
+    height: 255px;
     margin: 10px;
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     background: linear-gradient(to bottom, #a40ee4, #8257e6, #13131f);
     border-radius: 10px;
     box-shadow: 0 70px 63px -60px #000000;
     :hover{
         cursor: pointer;       
-        transform: scale(1.2);
+        background-image: linear-gradient(90deg, rgba(121,48,190,0.648) 100%, rgba(130,87,230,0.8) .2%);
+       
     }
     
 
@@ -79,9 +82,9 @@ export const Card = styled.div`
     }
 
     .name{
-        font-size: 39px;
+        font-size: 26px;
         margin-top: 50px;
-        margin-left: 5px;
+        /* margin-left: 5px; */
         font-weight: 600;
 
     }

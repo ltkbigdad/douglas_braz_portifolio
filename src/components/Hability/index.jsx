@@ -26,26 +26,6 @@ export const Hability = () => {
         {
             image: styled,
             name: "Styled Components"
-        },
-        {
-            image: html,
-            name: "HTML 5"
-        },
-        {
-            image: css,
-            name: "CSS 3"
-        },
-        {
-            image: javascript,
-            name: "Javascript"
-        },
-        {
-            image: react,
-            name: "ReactJS"
-        },
-        {
-            image: styled,
-            name: "Styled Components"
         }
 
     ]

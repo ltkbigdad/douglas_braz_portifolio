@@ -2,21 +2,25 @@ import { Container, ProjectBox, Content, CardProject, CardDescription, Backgroun
 import  test  from "../../assets/images/test.png"
 import { Button } from "../Button"
 import { useState } from "react"
+import doit_home from "../../assets/images/projetos/doit/doit_home.png"
+
 
 export const Projects = () => {
     const projects_arr = [
         {
             id: "1",
-            image: test,
-            name: "Projeto teste",
+            image: doit_home,
+            // video:doit_video ,
+            name: "Do It",
             description: "descriçao teste",
             technologies: "tecnologia teste",
             repository: "https://www.google.com/" ,
-            link: "https://www.youtube.com/",
+            link: "https://app-to-do-list-blush.vercel.app/",
         },
         {
             id: "2",
             image: test,
+            video:"" ,
             name: "Projeto teste",
             description: "descriçao teste",
             technologies: "tecnologia teste",
@@ -26,6 +30,7 @@ export const Projects = () => {
         {
             id: "3",
             image: test,
+            video:"" ,
             name: "Projeto teste",
             description: "descriçao teste",
             technologies: "tecnologia teste",
@@ -35,6 +40,7 @@ export const Projects = () => {
         {
             id: "4",
             image: test,
+            video:"" ,
             name: "Projeto teste",
             description: "descriçao teste",
             technologies: "tecnologia teste",
@@ -44,6 +50,7 @@ export const Projects = () => {
         {
             id: "5",
             image: test,
+            video:"" ,
             name: "Projeto teste",
             description: "descriçao teste",
             technologies: "tecnologia teste",
@@ -53,6 +60,7 @@ export const Projects = () => {
         {
             id: "6",
             image: test,
+            video:"" ,
             name: "Projeto teste",
             description: "descriçao teste",
             technologies: "tecnologia teste",
@@ -62,6 +70,7 @@ export const Projects = () => {
         {
             id: "7",
             image: test,
+            video:"" ,
             name: "Projeto teste",
             description: "descriçao teste",
             technologies: "tecnologia teste",
@@ -71,6 +80,7 @@ export const Projects = () => {
         {
             id: "8",
             image: test,
+            video:"" ,
             name: "Projeto teste",
             description: "descriçao teste",
             technologies: "tecnologia teste",
@@ -80,6 +90,7 @@ export const Projects = () => {
         {
             id: "9",
             image: test,
+            video:"" ,
             name: "Projeto teste",
             description: "descriçao teste",
             technologies: "tecnologia teste",
@@ -99,7 +110,7 @@ export const Projects = () => {
         
         <Container>
                       
-            <p>Projetos</p>
+            <p className="projectTittle">Projetos</p>
 
                 <ProjectBox>  
                     <Content>
@@ -107,7 +118,7 @@ export const Projects = () => {
                                 const {id, image, name} = el;
                                 return( 
                                     <>
-                                    <CardProject key={id}>                
+                                    <CardProject key={id} className="cardtest" >                
                                         <img src={image} alt="teste"/>
                                         <div className="cardHover">
                                             <p>{name}</p>                        
@@ -131,18 +142,18 @@ export const Projects = () => {
                                                     <img src={image} alt={name}/> 
                                                 </div>
                                                 <div className="boxButtons">
-                                                    <a target="_blank" rel="noreferrer" href={link}><Button default>Acessar projeto</Button></a>
-                                                    <a target="_blank" rel="noreferrer" href={repository}><Button > Acessar repositório</Button></a>
+                                                    <a target="_blank" rel="noreferrer" href={link}><Button default className="buttons" >Acessar projeto</Button></a>
+                                                    <a target="_blank" rel="noreferrer" href={repository} ><Button className="buttons" > Acessar repositório</Button></a>
                                                 </div>
                                             </div>
 
                                             <div className="boxDescriptions">
-                                            <p>{name}</p>
-                                            <p>{description}</p>
-                                            <p>{technologies}</p>
+                                            <p className="descriptionName">{name}</p>
+                                            <p className="descriptionText" >{description}</p>
+                                            <p className="descriptionTechnologies">{technologies}</p>
                                             </div>
 
-                                            <p onClick={() => setModal(false)}>X</p>
+                                            <p className="descriptionClose" onClick={() => setModal(false)}>X</p>
                                         </CardDescription>                                         
                                     </Background>
                                 )

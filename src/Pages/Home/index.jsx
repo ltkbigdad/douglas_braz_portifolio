@@ -13,7 +13,7 @@ export const Home = () =>{
 
             <Background>
                
-                <ul> 
+                <ul className="ulBoxAnimated"> 
                         <li className='boxAnimated'></li>
                         <li className='boxAnimated'></li>
                         <li className='boxAnimated'></li>

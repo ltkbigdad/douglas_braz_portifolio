@@ -16,7 +16,7 @@ const animate = keyframes`
 
 export const Background = styled.div`
     /* background: var(--grey-800); */
-    background: -webkit-linear-gradient(to left, #ffff, gray);
+    /* background: -webkit-linear-gradient(to left, #ffff, gray); */
      width: 100%;
     height: 100%; 
     /* height: 100vh; */
@@ -25,7 +25,7 @@ export const Background = styled.div`
     z-index: -1000;
     /* opacity: 0.7; */
 
-    ul{
+    .ulBoxAnimated{
         z-index: -8;
         position: fixed; 
         top: 0;
